@@ -1,15 +1,15 @@
 {
-	"id": "1ba490b2-fcbd-479f-8fdf-619830d080ae",
+	"id": "0f5e598c-b359-4223-8df8-885f36007a00",
 	"values": [
 		{
-			"key": "url",
-			"value": "https://api.predic8.de/shop",
+			"key": "fruta",
+			"value": "https://api.predic8.de:443/shop/",
 			"type": "default",
 			"enabled": true
 		}
 	],
 	"name": "Globals",
 	"_postman_variable_scope": "globals",
-	"_postman_exported_at": "2022-10-06T23:38:51.913Z",
-	"_postman_exported_using": "Postman/10.0.19-221006-1018"
+	"_postman_exported_at": "2023-03-29T23:23:20.741Z",
+	"_postman_exported_using": "Postman/10.12.9"
 }
