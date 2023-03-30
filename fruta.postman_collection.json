@@ -30,7 +30,7 @@
 			"response": []
 		},
 		{
-			"name": "{{fruta}}categories/",
+			"name": "categorias",
 			"event": [
 				{
 					"listen": "test",
@@ -123,6 +123,105 @@
 					],
 					"path": [
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{fruta}}categories/22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{fruta}}categories/22",
+					"host": [
+						"{{fruta}}categories"
+					],
+					"path": [
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exclusao do cliente /374",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{fruta}}customers/374",
+					"host": [
+						"{{fruta}}customers"
+					],
+					"path": [
+						"374"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{fruta}}customers/\"Pineapples\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"Freddy\",\r\n  \"lastname\": \"Meyers\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{fruta}}customers/\"Pineapples\"",
+					"host": [
+						"{{fruta}}customers"
+					],
+					"path": [
+						"\"Pineapples\""
 					]
 				}
 			},
